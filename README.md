@@ -76,13 +76,3 @@ Repositori ini berisi pembelajaran terstruktur, eksperimen, dan proyek riset di 
 ## Kontribusi
 Silakan fork, clone, dan tambahkan eksperimen Anda sendiri!
 ```
-
----
-
-Silakan lanjutkan dengan memilih bagian yang ingin dibuat dulu: 
-- Catatan `.md` teoritis
-- Implementasi `.py` praktikal
-- Template whitepaper
-- Tracking sheet pembelajaran
-
-Aku siap bantu bangun repo ini tahap demi tahap sesuai prioritasmu!
