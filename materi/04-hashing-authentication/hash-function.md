@@ -69,7 +69,7 @@ Mitigasi:
 2. Gunakan konstruksi sponge seperti SHA-3.
 3. Gunakan hash berbasis tree seperti BLAKE3 dengan mode keyed.
 
-Contoh serangan ini ada di `sha256-example.py`.
+Contoh serangan ini ada di `kode/04-hashing-authentication/sha256-example.py`.
 
 ---
 
@@ -151,7 +151,7 @@ Dirilis 2020, menggabungkan BLAKE2s dengan struktur pohon dan XOF.
 
 BLAKE3 membagi input menjadi chunk 1024 byte, membangun pohon biner, dan menggabungkan chaining value. Karena itu ia bisa memanfaatkan SIMD dan multi-core secara alami.
 
-Contoh implementasi ada di `blake3-example.py`, termasuk uji vektor resmi.
+Contoh implementasi ada di `kode/04-hashing-authentication/blake3-example.py`, termasuk uji vektor resmi.
 
 ---
 

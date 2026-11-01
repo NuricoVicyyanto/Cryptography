@@ -198,7 +198,7 @@ Ed25519 menjadi pilihan default di SSH, Signal, dan banyak protokol modern.
 
 ## 9. Implementasi Manual
 
-File `dsa-digital-signature.py` berisi:
+File `kode/03-asymmetric-encryption/dsa-digital-signature.py` berisi:
 
 - Parameter domain `p` 1024 bit dan `q` 160 bit yang dibangkitkan khusus.
 - Generator `g` dihitung dari `h^((p-1)/q) mod p`.

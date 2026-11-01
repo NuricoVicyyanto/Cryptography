@@ -254,7 +254,7 @@ RSA mudah dipahami dan didukung di mana-mana. ECC lebih efisien. Keduanya akan d
 
 ## 10. Implementasi Manual
 
-File `rsa-from-scratch.py` memuat:
+File `kode/03-asymmetric-encryption/rsa-from-scratch.py` memuat:
 
 - Miller-Rabin dengan basis deterministik untuk bilangan di bawah 2^64.
 - Pembangkitan prima yang memastikan `gcd(p-1, e) = 1`.
@@ -268,7 +268,7 @@ File `rsa-from-scratch.py` memuat:
 Jalankan:
 
 ```bash
-python rsa-from-scratch.py
+python kode/03-asymmetric-encryption/rsa-from-scratch.py
 ```
 
 Contoh keluaran:

@@ -191,7 +191,7 @@ def hkdf_expand(prk: bytes, info: bytes, length: int) -> bytes:
 
 ## 9. Implementasi Manual
 
-File `diffie-hellman.py` berisi:
+File `kode/03-asymmetric-encryption/diffie-hellman.py` berisi:
 
 - Parameter grup 256 bit dengan `p` safe prime dan `g` berorder `q`.
 - `Party` dengan kunci privat acak dan kunci publik.

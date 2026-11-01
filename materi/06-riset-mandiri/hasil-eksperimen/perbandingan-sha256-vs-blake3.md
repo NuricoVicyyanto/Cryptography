@@ -22,7 +22,7 @@ Tanggal pengukuran: November 2026.
 | Sistem operasi | Windows |
 | Python | 3.13.15 |
 | Library | hashlib bawaan, paket `blake3` |
-| Implementasi manual | `sha256-example.py`, `blake3-example.py` |
+| Implementasi manual | `kode/04-hashing-authentication/sha256-example.py`, `kode/04-hashing-authentication/blake3-example.py` |
 | Metode waktu | `time.perf_counter`, nilai minimum dari 7 pengulangan |
 | Sumber data | `os.urandom` |
 

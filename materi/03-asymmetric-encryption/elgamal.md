@@ -181,7 +181,7 @@ Ini adalah cara yang benar untuk memakai ide ElGamal di dunia nyata.
 
 ## 10. Implementasi Manual
 
-File `elgamal.py` berisi:
+File `kode/03-asymmetric-encryption/elgamal.py` berisi:
 
 - Enkripsi dan dekripsi integer dengan `(c1, c2)`.
 - Demonstrasi sifat probabilistik.

@@ -53,7 +53,7 @@ Konstruksi naif `H(key || message)` rentan **length extension**. Dari `H(key || 
 - Rentan collision jika hash-nya lemah, karena collision pada `message` langsung menjadi collision pada MAC.
 - Untuk hash dengan Merkle-Damgard, ada serangan yang lebih halus.
 
-Contoh serangan ada di `sha256-example.py`, fungsi `length_extension_attack`.
+Contoh serangan ada di `kode/04-hashing-authentication/sha256-example.py`, fungsi `length_extension_attack`.
 
 ---
 
@@ -195,7 +195,7 @@ Banyak layanan mengirim header seperti `X-Signature: sha256=...`. Verifikasi har
 
 ## 10. Implementasi di Folder Ini
 
-`hmac.py` berisi:
+`kode/04-hashing-authentication/hmac.py` berisi:
 
 - `hmac_new`, implementasi HMAC untuk SHA-256, SHA-1, dan SHA-512.
 - `constant_time_compare` dan `unsafe_compare` untuk demonstrasi timing.
@@ -205,7 +205,7 @@ Banyak layanan mengirim header seperti `X-Signature: sha256=...`. Verifikasi har
 - Demo key separation.
 - Pengukuran waktu perbandingan naif.
 
-Catatan penting: karena file ini bernama `hmac.py`, ia membayangi modul standar `hmac` di Python jika dijalankan dari folder yang sama. Skrip ini mengatasi hal itu dengan memuat modul standar lewat `importlib`. Untuk proyek nyata, gunakan nama file lain atau letakkan di package terpisah.
+Catatan penting: karena file ini bernama `hmac.py`, ia membayangi modul standar `hmac` di Python jika dijalankan dari folder `kode/04-hashing-authentication`. Skrip ini mengatasi hal itu dengan memuat modul standar lewat `importlib`. Untuk proyek nyata, gunakan nama file lain atau letakkan di package terpisah.
 
 ---
 

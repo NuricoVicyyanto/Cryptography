@@ -227,7 +227,7 @@ Untuk perangkat dengan baterai, memori, dan bandwidth terbatas, ECC adalah pilih
 
 ## 10. Implementasi di Folder Ini
 
-`elliptic-curve.py` berisi:
+`kode/05-advanced-crypto/elliptic-curve.py` berisi:
 
 - Kelas `Curve` dengan `add`, `double`, `mul`, `order_of`, `all_points`.
 - Kurva kecil `y^2 = x^3 + 2x + 2 mod 17` untuk eksplorasi.

@@ -203,7 +203,7 @@ Kekurangan:
 - Butuh memori besar per verifikasi, sehingga bisa menjadi serangan DoS jika parameter terlalu tinggi.
 - Kurang fleksibel dibanding Argon2.
 
-Implementasi dari nol ada di `password-hashing.py`, termasuk Salsa20/8 dan BlockMix.
+Implementasi dari nol ada di `kode/04-hashing-authentication/password-hashing.py`, termasuk Salsa20/8 dan BlockMix.
 
 ---
 
@@ -338,7 +338,7 @@ Praktik modern (NIST SP 800-63B):
 
 ## 15. Implementasi di Folder Ini
 
-`password-hashing.py` berisi:
+`kode/04-hashing-authentication/password-hashing.py` berisi:
 
 - PBKDF2-HMAC-SHA256 dari nol, diuji terhadap `hashlib`.
 - scrypt dari nol, termasuk `salsa20_8`, `blockmix`, dan `romix`, diuji terhadap `hashlib.scrypt`.

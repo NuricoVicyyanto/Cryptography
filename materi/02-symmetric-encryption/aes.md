@@ -227,7 +227,7 @@ Aturan penting:
 
 ## 11. Implementasi Manual
 
-File `aes.py` di folder ini mengimplementasikan AES-128, AES-192, dan AES-256 dari nol:
+File `kode/02-symmetric-encryption/aes.py` mengimplementasikan AES-128, AES-192, dan AES-256 dari nol:
 
 - S-box dibangkitkan secara matematis, bukan diketik manual.
 - Key expansion lengkap untuk ketiga ukuran kunci.

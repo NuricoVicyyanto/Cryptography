@@ -212,7 +212,7 @@ Catatan penting: ChaCha20 **tidak** memberi autentikasi. Jika hanya memakai ChaC
 
 ## 11. Implementasi Manual
 
-File `chacha20.py` berisi:
+File `kode/02-symmetric-encryption/chacha20.py` berisi:
 
 - `quarter_round`, fungsi inti.
 - `block`, pembangkit satu blok 64 byte.
