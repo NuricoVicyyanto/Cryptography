@@ -14,43 +14,43 @@ kriptografi-research-roadmap/
 ├── LICENSE
 │
 ├── materi/                                   # SEMUA TEORI DAN CATATAN (Markdown)
-│   ├── README.md                             # Indeks seluruh materi
+│   ├── README.md                             # Indeks materi dan urutan baca
 │   ├── 01-fondasi-matematika/
-│   │   ├── teori-bilangan.md                 # Konsep bilangan prima, GCD, modulo
-│   │   ├── operasi-modular.md                # Modular arithmetic, inverse mod
-│   │   └── cipher-klasik/
-│   │       └── cipher-klasik.md              # Catatan analisis cipher klasik
+│   │   ├── 01-teori-bilangan.md              # Bilangan prima, GCD, modulo
+│   │   ├── 02-operasi-modular.md             # Aritmatika modular, EEA, CRT
+│   │   └── 03-cipher-klasik/
+│   │       └── cipher-klasik.md              # Analisis cipher klasik
 │   ├── 02-symmetric-encryption/
-│   │   ├── aes.md                            # Teori AES dan mode operasi
-│   │   ├── mode-cbc-vs-ecb.md                # Analisis perbandingan mode
-│   │   ├── chacha20.md                       # Penjelasan ChaCha20
-│   │   └── padding-iv.md                     # Konsep padding dan IV
+│   │   ├── 01-aes.md                         # Teori AES dan mode operasi
+│   │   ├── 02-mode-cbc-vs-ecb.md             # Perbandingan ECB dan CBC
+│   │   ├── 03-chacha20.md                    # Penjelasan ChaCha20
+│   │   └── 04-padding-iv.md                  # Padding dan IV
 │   ├── 03-asymmetric-encryption/
-│   │   ├── rsa.md                            # Teori RSA dan aplikasinya
-│   │   ├── diffie-hellman.md                 # Teori DH Key Exchange
-│   │   ├── dsa.md                            # Teori DSA dan tanda tangan digital
-│   │   └── elgamal.md                        # Penjelasan ElGamal
+│   │   ├── 01-rsa.md                         # Teori RSA dan aplikasinya
+│   │   ├── 02-diffie-hellman.md              # Teori DH Key Exchange
+│   │   ├── 03-dsa.md                         # Teori DSA dan tanda tangan
+│   │   └── 04-elgamal.md                     # Penjelasan ElGamal
 │   ├── 04-hashing-authentication/
-│   │   ├── hash-function.md                  # SHA family, BLAKE, properti hash
-│   │   ├── password-hashing.md               # Teknik hashing password
-│   │   └── hmac.md                           # Konsep HMAC
+│   │   ├── 01-hash-function.md               # SHA family, BLAKE, properti hash
+│   │   ├── 02-hmac.md                        # Konsep HMAC
+│   │   └── 03-password-hashing.md            # Teknik hashing password
 │   ├── 05-advanced-crypto/
-│   │   ├── ecc.md                            # Dasar ECC
-│   │   ├── zero-knowledge.md                 # Zero Knowledge Proofs
-│   │   ├── zk-snark-summary.md               # Ringkasan konsep zk-SNARK
-│   │   ├── homomorphic-overview.md           # Konsep homomorphic encryption
-│   │   └── mpc-overview.md                   # Secure MPC overview
+│   │   ├── 01-ecc.md                         # Dasar ECC
+│   │   ├── 02-zero-knowledge.md              # Zero Knowledge Proofs
+│   │   ├── 03-zk-snark-summary.md            # Ringkasan zk-SNARK
+│   │   ├── 04-homomorphic-overview.md        # Homomorphic encryption
+│   │   └── 05-mpc-overview.md                # Secure MPC overview
 │   ├── 06-riset-mandiri/
-│   │   ├── metodologi-riset.md               # Cara merancang penelitian
-│   │   ├── whitepaper-template.md            # Template laporan riset
-│   │   ├── topik-riset.md                    # Ide topik riset
-│   │   ├── hasil-eksperimen/
-│   │   │   └── perbandingan-sha256-vs-blake3.md
-│   │   └── publikasi-blog.md                 # Panduan artikel publikasi
+│   │   ├── 01-metodologi-riset.md            # Cara merancang penelitian
+│   │   ├── 02-whitepaper-template.md         # Template laporan riset
+│   │   ├── 03-topik-riset.md                 # Ide topik riset
+│   │   ├── 04-publikasi-blog.md              # Panduan artikel publikasi
+│   │   └── 05-hasil-eksperimen/
+│   │       └── perbandingan-sha256-vs-blake3.md
 │   └── resources/
-│       ├── buku-referensi.md                 # Daftar buku dan sumber belajar
-│       ├── link-tools.md                     # Tools, library, playground
-│       └── artikel-favorit.md                # Artikel teknis penting
+│       ├── 01-buku-referensi.md              # Daftar buku dan sumber belajar
+│       ├── 02-link-tools.md                  # Tools, library, playground
+│       └── 03-artikel-favorit.md             # Artikel teknis penting
 │
 └── kode/                                     # SEMUA IMPLEMENTASI (Python)
     ├── README.md                             # Indeks dan cara menjalankan
@@ -61,20 +61,20 @@ kriptografi-research-roadmap/
     │       ├── vigenere.py                   # Vigenere, Kasiski, IC
     │       └── transposition.py              # Rail fence, columnar, route
     ├── 02-symmetric-encryption/
-    │   ├── aes.py                            # AES-128/192/256 dari nol, CBC, CTR
-    │   └── chacha20.py                       # ChaCha20 dan Poly1305 dari nol
+    │   ├── aes.py                            # AES-128/192/256, CBC, CTR
+    │   └── chacha20.py                       # ChaCha20 dan Poly1305
     ├── 03-asymmetric-encryption/
-    │   ├── rsa-from-scratch.py               # RSA, PKCS#1 v1.5, CRT, tanda tangan
+    │   ├── rsa-from-scratch.py               # RSA, PKCS#1 v1.5, CRT
     │   ├── diffie-hellman.py                 # DH, MITM, forward secrecy
     │   ├── dsa-digital-signature.py          # DSA dan serangan nonce reuse
     │   └── elgamal.py                        # Enkripsi dan tanda tangan ElGamal
     ├── 04-hashing-authentication/
-    │   ├── sha256-example.py                 # SHA-256 dari nol, length extension
-    │   ├── blake3-example.py                 # BLAKE3 dari nol, tree hashing, XOF
-    │   ├── password-hashing.py               # PBKDF2 dan scrypt dari nol
+    │   ├── sha256-example.py                 # SHA-256 dan length extension
+    │   ├── blake3-example.py                 # BLAKE3, tree hashing, XOF
+    │   ├── password-hashing.py               # PBKDF2 dan scrypt
     │   └── hmac.py                           # HMAC dan constant time compare
     └── 05-advanced-crypto/
-        └── elliptic-curve.py                 # ECC, ECDH, ECDSA pada secp256k1
+        └── elliptic-curve.py                 # ECC, ECDH, ECDSA
 ```
 
 ### Aturan penamaan
@@ -85,6 +85,16 @@ kriptografi-research-roadmap/
 | `kode/` | Implementasi, eksperimen, benchmark | `.py` |
 
 Nama subfolder modul (`01-fondasi-matematika`, `02-symmetric-encryption`, dan seterusnya) sama persis di kedua pohon. Untuk membaca teori modul 2, buka `materi/02-symmetric-encryption/`. Untuk menjalankan kodenya, buka `kode/02-symmetric-encryption/`.
+
+### Aturan penomoran materi
+
+| Posisi angka | Arti | Contoh |
+|---|---|---|
+| Depan nama folder modul | Urutan modul | `01-fondasi-matematika`, `02-symmetric-encryption` |
+| Depan nama file materi | Urutan baca di dalam modul | `01-aes.md`, `02-mode-cbc-vs-ecb.md`, `03-chacha20.md` |
+| Depan nama subfolder materi | Urutan topik di dalam modul | `03-cipher-klasik/`, `05-hasil-eksperimen/` |
+
+Nomor selalu dibaca berurutan, sehingga urutan materi tetap sama meskipun folder diurutkan berdasarkan abjad. Indeks lengkap dengan urutan baca ada di [`materi/README.md`](materi/README.md).
 
 ## 📘 README.md (Contoh Isi)
 ```markdown
@@ -162,7 +172,7 @@ Tidak ada dependensi wajib. Beberapa bagian bersifat opsional dan akan dilewati 
 ```bash
 pip install pycryptodome   # perbandingan AES manual dengan library di kode/02-symmetric-encryption/aes.py
 pip install blake3         # perbandingan BLAKE3 dengan library C di kode/04-hashing-authentication/blake3-example.py
-pip install argon2-cffi    # contoh Argon2 di materi/04-hashing-authentication/password-hashing.md
+pip install argon2-cffi    # contoh Argon2 di materi/04-hashing-authentication/03-password-hashing.md
 ```
 
 Catatan: file `kode/04-hashing-authentication/hmac.py` bernama sama dengan modul standar Python. Jalankan dari folder lain atau muat modul standar lewat `importlib` seperti yang dilakukan skrip tersebut.
@@ -171,13 +181,13 @@ Catatan: file `kode/04-hashing-authentication/hmac.py` bernama sama dengan modul
 
 ## 🧭 Urutan Belajar yang Disarankan
 
-1. **Bulan 1, fondasi matematika.** Baca `materi/01-fondasi-matematika/teori-bilangan.md` dan `operasi-modular.md`, lalu jalankan `kode/01-fondasi-matematika/operasi-modular.py`.
-2. **Bulan 1, cipher klasik.** Baca `materi/01-fondasi-matematika/cipher-klasik/cipher-klasik.md`, jalankan tiga skrip di `kode/01-fondasi-matematika/cipher-klasik/`, lalu coba kriptanalisisnya.
-3. **Bulan 2, simetris.** Baca `materi/02-symmetric-encryption/aes.md` dan `chacha20.md`, jalankan kode di `kode/02-symmetric-encryption/`, lalu baca `mode-cbc-vs-ecb.md` dan `padding-iv.md`.
-4. **Bulan 3, asimetris.** Mulai dari `materi/03-asymmetric-encryption/rsa.md`, lanjut ke Diffie-Hellman, DSA, dan ElGamal, dengan kode di `kode/03-asymmetric-encryption/`.
-5. **Bulan 4, hash dan autentikasi.** Baca `materi/04-hashing-authentication/hash-function.md` dan `hmac.md`, lalu `password-hashing.md`, dan jalankan kode di `kode/04-hashing-authentication/`.
+1. **Bulan 1, fondasi matematika.** Baca `materi/01-fondasi-matematika/01-teori-bilangan.md` dan `02-operasi-modular.md`, lalu jalankan `kode/01-fondasi-matematika/operasi-modular.py`.
+2. **Bulan 1, cipher klasik.** Baca `materi/01-fondasi-matematika/03-cipher-klasik/cipher-klasik.md`, jalankan tiga skrip di `kode/01-fondasi-matematika/cipher-klasik/`, lalu coba kriptanalisisnya.
+3. **Bulan 2, simetris.** Baca `materi/02-symmetric-encryption/01-aes.md` dan `03-chacha20.md`, jalankan kode di `kode/02-symmetric-encryption/`, lalu baca `02-mode-cbc-vs-ecb.md` dan `04-padding-iv.md`.
+4. **Bulan 3, asimetris.** Mulai dari `materi/03-asymmetric-encryption/01-rsa.md`, lanjut ke Diffie-Hellman, DSA, dan ElGamal, dengan kode di `kode/03-asymmetric-encryption/`.
+5. **Bulan 4, hash dan autentikasi.** Baca `materi/04-hashing-authentication/01-hash-function.md` dan `02-hmac.md`, lalu `03-password-hashing.md`, dan jalankan kode di `kode/04-hashing-authentication/`.
 6. **Bulan 5, topik lanjut.** Baca materi di `materi/05-advanced-crypto/`, lalu jalankan `kode/05-advanced-crypto/elliptic-curve.py`.
-7. **Bulan 6, riset.** Ikuti `materi/06-riset-mandiri/metodologi-riset.md`, pilih topik, tulis laporan dengan template, lalu publikasikan.
+7. **Bulan 6, riset.** Ikuti `materi/06-riset-mandiri/01-metodologi-riset.md`, pilih topik, tulis laporan dengan template, lalu publikasikan.
 
 ---
 

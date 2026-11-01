@@ -196,7 +196,7 @@ Pelajaran: AES aman, tetapi sistem di sekitarnya yang rapuh.
 | CCM | Ya | Tidak | Ya | Cocok untuk perangkat terbatas |
 | XTS | Ya | Ya | Tidak | Khusus enkripsi disk |
 
-Untuk aplikasi baru, pilihan yang aman adalah **AES-GCM** atau **ChaCha20-Poly1305**. Detail perbandingan ada di `mode-cbc-vs-ecb.md`.
+Untuk aplikasi baru, pilihan yang aman adalah **AES-GCM** atau **ChaCha20-Poly1305**. Detail perbandingan ada di `02-mode-cbc-vs-ecb.md`.
 
 ---
 

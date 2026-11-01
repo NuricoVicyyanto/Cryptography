@@ -181,7 +181,7 @@ Tahap 5: Lanjutan
   - Baca paper asli
 
 Tahap 6: Riset
-  - Pilih topik dari `topik-riset.md`
+  - Pilih topik dari `03-topik-riset.md`
   - Tulis laporan
   - Publikasikan
 ```

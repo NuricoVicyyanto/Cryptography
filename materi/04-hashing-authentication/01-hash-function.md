@@ -182,7 +182,7 @@ Untuk sistem baru: SHA-256, SHA-512, SHA-3, atau BLAKE3. Jangan memakai MD5 atau
 | Tujuan | Integritas | Kerahasiaan |
 | Reversibel | Tidak | Ya dengan kunci |
 
-Meng-hash password bukan berarti menyimpannya dengan aman. Untuk password, hash cepat pun tidak cukup, perlu KDF lambat seperti Argon2. Lihat `password-hashing.md`.
+Meng-hash password bukan berarti menyimpannya dengan aman. Untuk password, hash cepat pun tidak cukup, perlu KDF lambat seperti Argon2. Lihat `03-password-hashing.md`.
 
 ---
 

@@ -170,7 +170,7 @@ Jika hasil tidak cocok, jangan "menyesuaikan" vektor. Perbaiki implementasi.
 9. Kesimpulan dan riset lanjutan.
 10. Referensi dan lampiran kode.
 
-Template lengkap ada di `whitepaper-template.md`.
+Template lengkap ada di `02-whitepaper-template.md`.
 
 ---
 
