@@ -1,0 +1,25 @@
+# Bytecode Python
+__pycache__/
+*.py[cod]
+
+# Lingkungan virtual
+.venv/
+venv/
+env/
+
+# Berkasan editor
+.vscode/
+.idea/
+*.swp
+
+# Output eksperimen
+*.log
+*.tmp
+out/
+dist/
+build/
+
+# Data besar hasil benchmark
+*.csv
+*.json
+!data/contoh.json
